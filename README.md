@@ -1,18 +1,28 @@
 # OKAPI - polygonal gcode design
-### OKAPIはRhinoceros+Grasshopper用のGcode作成ツールです。
-![ce7a558ec9cb198fffe471eedc7a4738](https://github.com/user-attachments/assets/ec503611-b480-442c-af85-1c586d06177c)
+### OKAPIはRhinoceros+Grasshopper用のGcode作成ツールです。ポリゴンメッシュに基づいたツールパス生成クワッドメッシュの輪郭線に基づいてツールパスを定義することでNon-Planar3Dプリント用の複雑なツールパスの生成が可能です。
+詳細は( http://fab.sfc.keio.ac.jp/paper/files/2022_MoriyasuChinen.pdf )
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/ec503611-b480-442c-af85-1c586d06177c" width="30%">
+  <img src="https://github.com/user-attachments/assets/765811cb-c92b-4da8-bb61-defac346b9fe" width="30%">
+  <img src="https://github.com/user-attachments/assets/d8c81162-db2b-4433-9e50-62b1759a58c5" width="30%">
+</div>
 
-## OKAPIの特徴
 
-### ポリゴンメッシュに基づいたツールパス生成
 ![_OKAPIを利用したツールパス生成のワークフロー](https://github.com/user-attachments/assets/0a215ed9-8a13-47fe-ae22-9f6e75c6ad95)
 _OKAPIを利用したツールパス生成のワークフロー_  
 
-クワッドメッシュの輪郭線に基づいてツールパスを定義することでNon-Planar3Dプリント用の複雑なツールパスを生成します。  
-1. modeling：各種3DCGソフトウェアで制作された.obj形式のクワッドメッシュモデルに対応しています。
 
-## OKAPIの動作環境
+
+
+## 導入前に
+### OKAPIの動作環境
 Windows版Rhinoceros7（8は動作未検証になります）
+
+### 3Dプリンタのセットアップ
+- 本ツールはスタートコードとエンコードを調整することで一般的な卓上3Dプリンタでの利用が可能です。（動作確認済み機種：Ender3,Ender5,ZonstarZ8T)
+- Non-Planar3Dプリントではノズルを上下方向に動かしながら造形を行うため長いノズルを利用する必要があります。必要に応じてノズルの入手と3Dプリンタのセットアップを行ってください。
+  Non-Planar3Dプリント用ノズル（ https://www.nonplanar.xyz/ ）
+
 
 
 ## OKAPIの導入方法
@@ -29,14 +39,18 @@ Windows版Rhinoceros7（8は動作未検証になります）
 
 ### 3. OKAPIのダウンロード
 本画面の右上の〇〇からZipファイルをダウンロードしてください。
+![image](https://github.com/user-attachments/assets/6cdb8e41-7abf-41a0-9945-d5a7441deb42)
 
 
 
 ## OKAPIの使い方
 
 ### 1. サンプルファイルの読み込み
+okapi.ghファイルをRhinocerosで開くとUIパネルが表示されます。（画像赤枠）
+![image](https://github.com/user-attachments/assets/7971b15d-efb7-48b9-95fc-21c52e4551da)
+- ①を選択すると、ファイルの読み込み画面が表示されます。Zipファイル内のsampleTorso.objを選択すると画像のように読み込まれます。
+![image](https://github.com/user-attachments/assets/4a426ba6-b847-4c02-bc0d-0b25a3ccc536)
 
-   
 ### 2. スライス
 ### 3. テクスチャ編集
 ### 4. 書き出し
