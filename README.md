@@ -67,7 +67,12 @@ Rhinocerosのコマンドライン上に下図①～④に対応するダイア�
 成功すると抽出されたツールパスが表示されます。
 ![d7469fc510b7879d1940bdb208a2b61c](https://github.com/user-attachments/assets/1885035b-10e5-4af3-aa8c-8da1977e568f)
 
-
+レンダリングプレビューにすると、積層痕をシミュレーションして見ることが出来ます。
+最大レイヤーピッチ(mm)を調整することで全体のレイヤーピッチを制御
+<div style="display: flex; justify-content: center; gap: 10px;">
+  <img src="https://github.com/user-attachments/assets/67944c3b-faae-419d-88e5-7920c819c60e"  style="max-width: 100%; height: auto; flex: 1;">
+  <img src="https://github.com/user-attachments/assets/7b36cf08-780b-4e4b-8202-c995e4a9a472"  style="max-width: 100%; height: auto; flex: 1;">
+</div>
 
 ### 3. テクスチャ編集
 ### 4. 書き出し
