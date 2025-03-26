@@ -68,13 +68,23 @@ Rhinocerosのコマンドライン上に下図①～④に対応するダイア�
 ![d7469fc510b7879d1940bdb208a2b61c](https://github.com/user-attachments/assets/1885035b-10e5-4af3-aa8c-8da1977e568f)
 
 レンダリングプレビューにすると、積層痕をシミュレーションして見ることが出来ます。
-最大レイヤーピッチ(mm)を調整することで全体のレイヤーピッチを制御
+最大レイヤーピッチ(mm)を調整することで全体のレイヤーピッチを制御出来ます。（詳細はP.52 http://fab.sfc.keio.ac.jp/paper/files/2022_MoriyasuChinen.pdf )
 <div style="display: flex; justify-content: center; gap: 10px;">
   <img src="https://github.com/user-attachments/assets/67944c3b-faae-419d-88e5-7920c819c60e"  style="max-width: 100%; height: auto; flex: 1;">
   <img src="https://github.com/user-attachments/assets/7b36cf08-780b-4e4b-8202-c995e4a9a472"  style="max-width: 100%; height: auto; flex: 1;">
 </div>
 
 ### 3. テクスチャ編集
+網目模様とランダム模様のテクスチャを付与することが出来ます。
+網目の間隔はポリゴンメッシュの縦線の間隔に依存しています。
+![image](https://github.com/user-attachments/assets/b5e53eeb-b659-462e-81ba-4c07f747db59)
+
 ### 4. 書き出し
+この工程で一般的なスライサーと同様にプリントの設定を行います。
+※ender3以外のプリンターを利用してる方はStart Script とEnd Scriptを必ず書き換えてください。
+※温度設定はマニュアル操作となります。
+
+
 
 ### モデルの作成方法
+（詳細はP.52 http://fab.sfc.keio.ac.jp/paper/files/2022_MoriyasuChinen.pdf )
