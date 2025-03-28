@@ -1,4 +1,4 @@
-# OKAPI - polygonal gcode design
+# OKAPI - Polygonal Gcode Design
 ### OKAPIはRhinoceros+Grasshopper用のGcode作成ツールです。  
 ポリゴンメッシュに基づいたツールパス生成クワッドメッシュの輪郭線に基づいてツールパスを定義することでNon-Planar3Dプリント用の複雑なツールパスの生成が可能です。
 詳細はこちらの卒業論文を参照ください。( http://fab.sfc.keio.ac.jp/paper/files/2022_MoriyasuChinen.pdf )
